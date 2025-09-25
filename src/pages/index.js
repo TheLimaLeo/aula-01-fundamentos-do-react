@@ -6,16 +6,9 @@ import Welcome from "@/components/Welcome";
 import User from "@/components/User";
 import Description from "@/components/Description";
 import Pet from "@/components/Pet";
+import Counter from "@/components/Counter";
+import UserForm from "@/components/UserForm";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
-});
-
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
-  subsets: ["latin"],
-});
 
 export default function Home() {
   return (
@@ -32,6 +25,8 @@ export default function Home() {
         <User/>
         <Description city="Registro" age={26} email="leo@gmail.com"/>
         <Pet name="Rex" breed="Pitbull" age={4}/>
+        <Counter/>
+        <UserForm/>
       </main>
      
     </>
